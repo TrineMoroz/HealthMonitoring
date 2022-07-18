@@ -12,6 +12,8 @@
 		9145BFB02883EFD7007AE45E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9145BFAE2883EFD7007AE45E /* Main.storyboard */; };
 		9145BFB22883EFD8007AE45E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9145BFB12883EFD8007AE45E /* Assets.xcassets */; };
 		9145BFB52883EFD8007AE45E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9145BFB32883EFD8007AE45E /* LaunchScreen.storyboard */; };
+		917EEDEB28856B8C00D97DD2 /* UIColor+customColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EEDEA28856B8C00D97DD2 /* UIColor+customColors.swift */; };
+		917EEDED28856D7700D97DD2 /* UIFont+customFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EEDEC28856D7700D97DD2 /* UIFont+customFonts.swift */; };
 		9CF749C7B0D2A1BDD06F5BDC /* Pods_HealthMonitoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B11B8B85A59E2D4F994212 /* Pods_HealthMonitoring.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		9145BFB12883EFD8007AE45E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9145BFB42883EFD8007AE45E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9145BFB62883EFD8007AE45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		917EEDEA28856B8C00D97DD2 /* UIColor+customColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+customColors.swift"; sourceTree = "<group>"; };
+		917EEDEC28856D7700D97DD2 /* UIFont+customFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+customFonts.swift"; sourceTree = "<group>"; };
 		AAF7118D49400F35C69502D6 /* Pods-HealthMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthMonitoring.debug.xcconfig"; path = "Target Support Files/Pods-HealthMonitoring/Pods-HealthMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
 		B8B11B8B85A59E2D4F994212 /* Pods_HealthMonitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthMonitoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5135743FE8FFE39ABC5B190 /* Pods-HealthMonitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthMonitoring.release.xcconfig"; path = "Target Support Files/Pods-HealthMonitoring/Pods-HealthMonitoring.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		917EEDE7288569C600D97DD2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				917EEDEA28856B8C00D97DD2 /* UIColor+customColors.swift */,
+				917EEDEC28856D7700D97DD2 /* UIFont+customFonts.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -217,8 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				917EEDED28856D7700D97DD2 /* UIFont+customFonts.swift in Sources */,
 				9145BFAD2883EFD7007AE45E /* ViewController.swift in Sources */,
 				9145BFA92883EFD7007AE45E /* AppDelegate.swift in Sources */,
+				917EEDEB28856B8C00D97DD2 /* UIColor+customColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
