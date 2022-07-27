@@ -17,6 +17,12 @@
 		917EEDF22885F73500D97DD2 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EEDF12885F73500D97DD2 /* MainViewModel.swift */; };
 		917EEDF62885F9E600D97DD2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EEDF52885F9E600D97DD2 /* ProfileViewController.swift */; };
 		917EEDF82885F9F500D97DD2 /* ProfiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EEDF72885F9F500D97DD2 /* ProfiveViewModel.swift */; };
+		942694422888057B007055DF /* ProfileCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942694412888057B007055DF /* ProfileCollectionCell.swift */; };
+		9426944628880897007055DF /* ProfileCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426944528880897007055DF /* ProfileCollectionView.swift */; };
+		9491DA2728892A0C00661C29 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9491DA2628892A0C00661C29 /* UIViewExtension.swift */; };
+		9491DA2A288962B500661C29 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9491DA29288962B500661C29 /* ProfileModel.swift */; };
+		9491DA2C28897ACC00661C29 /* ProfileCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9491DA2B28897ACC00661C29 /* ProfileCollectionCellViewModel.swift */; };
+		9491DA2E2889827B00661C29 /* ProfileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9491DA2D2889827B00661C29 /* ProfileProtocols.swift */; };
 		9CF749C7B0D2A1BDD06F5BDC /* Pods_HealthMonitoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B11B8B85A59E2D4F994212 /* Pods_HealthMonitoring.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +39,12 @@
 		917EEDF12885F73500D97DD2 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		917EEDF52885F9E600D97DD2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		917EEDF72885F9F500D97DD2 /* ProfiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfiveViewModel.swift; sourceTree = "<group>"; };
+		942694412888057B007055DF /* ProfileCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionCell.swift; sourceTree = "<group>"; };
+		9426944528880897007055DF /* ProfileCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionView.swift; sourceTree = "<group>"; };
+		9491DA2628892A0C00661C29 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		9491DA29288962B500661C29 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		9491DA2B28897ACC00661C29 /* ProfileCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionCellViewModel.swift; sourceTree = "<group>"; };
+		9491DA2D2889827B00661C29 /* ProfileProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocols.swift; sourceTree = "<group>"; };
 		AAF7118D49400F35C69502D6 /* Pods-HealthMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthMonitoring.debug.xcconfig"; path = "Target Support Files/Pods-HealthMonitoring/Pods-HealthMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
 		B8B11B8B85A59E2D4F994212 /* Pods_HealthMonitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthMonitoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5135743FE8FFE39ABC5B190 /* Pods-HealthMonitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthMonitoring.release.xcconfig"; path = "Target Support Files/Pods-HealthMonitoring/Pods-HealthMonitoring.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,10 +140,56 @@
 		917EEDF32885F9B700D97DD2 /* ProfileScreen */ = {
 			isa = PBXGroup;
 			children = (
-				917EEDF52885F9E600D97DD2 /* ProfileViewController.swift */,
-				917EEDF72885F9F500D97DD2 /* ProfiveViewModel.swift */,
+				9491DA282889625300661C29 /* Model */,
+				94269443288805B4007055DF /* ProfileView */,
+				94269444288805C4007055DF /* ProfileViewModel */,
+				9491DA2F2889828400661C29 /* Protocols */,
+				9491DA25288929BE00661C29 /* Extensions */,
 			);
 			path = ProfileScreen;
+			sourceTree = "<group>";
+		};
+		94269443288805B4007055DF /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				917EEDF52885F9E600D97DD2 /* ProfileViewController.swift */,
+				9426944528880897007055DF /* ProfileCollectionView.swift */,
+				942694412888057B007055DF /* ProfileCollectionCell.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		94269444288805C4007055DF /* ProfileViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				917EEDF72885F9F500D97DD2 /* ProfiveViewModel.swift */,
+				9491DA2B28897ACC00661C29 /* ProfileCollectionCellViewModel.swift */,
+			);
+			path = ProfileViewModel;
+			sourceTree = "<group>";
+		};
+		9491DA25288929BE00661C29 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9491DA2628892A0C00661C29 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9491DA282889625300661C29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9491DA29288962B500661C29 /* ProfileModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9491DA2F2889828400661C29 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9491DA2D2889827B00661C29 /* ProfileProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		9BC3B82A28B29EA5B3EC211F /* Pods */ = {
@@ -268,11 +326,17 @@
 				917EEDF82885F9F500D97DD2 /* ProfiveViewModel.swift in Sources */,
 				917EEDF02885F72B00D97DD2 /* MainRouter.swift in Sources */,
 				917EEDED28856D7700D97DD2 /* UIFont+customFonts.swift in Sources */,
+				9491DA2A288962B500661C29 /* ProfileModel.swift in Sources */,
 				9145BFAD2883EFD7007AE45E /* MainViewController.swift in Sources */,
+				9426944628880897007055DF /* ProfileCollectionView.swift in Sources */,
+				942694422888057B007055DF /* ProfileCollectionCell.swift in Sources */,
 				9145BFA92883EFD7007AE45E /* AppDelegate.swift in Sources */,
 				917EEDF62885F9E600D97DD2 /* ProfileViewController.swift in Sources */,
 				917EEDEB28856B8C00D97DD2 /* UIColor+customColors.swift in Sources */,
+				9491DA2728892A0C00661C29 /* UIViewExtension.swift in Sources */,
 				917EEDF22885F73500D97DD2 /* MainViewModel.swift in Sources */,
+				9491DA2C28897ACC00661C29 /* ProfileCollectionCellViewModel.swift in Sources */,
+				9491DA2E2889827B00661C29 /* ProfileProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
