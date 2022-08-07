@@ -17,6 +17,9 @@
 		917EEDF22885F73500D97DD2 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EEDF12885F73500D97DD2 /* MainViewModel.swift */; };
 		917EEDF62885F9E600D97DD2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EEDF52885F9E600D97DD2 /* ProfileViewController.swift */; };
 		917EEDF82885F9F500D97DD2 /* ProfiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EEDF72885F9F500D97DD2 /* ProfiveViewModel.swift */; };
+		91CEAFD728A0525200836183 /* BackgroungTableUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CEAFD628A0525200836183 /* BackgroungTableUIView.swift */; };
+		91DA7D15288DC8980048E18D /* Doctors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DA7D14288DC8980048E18D /* Doctors.swift */; };
+		91E4D283288896030001F06C /* SpecialistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E4D282288896030001F06C /* SpecialistCell.swift */; };
 		9CF749C7B0D2A1BDD06F5BDC /* Pods_HealthMonitoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B11B8B85A59E2D4F994212 /* Pods_HealthMonitoring.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,9 @@
 		917EEDF12885F73500D97DD2 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		917EEDF52885F9E600D97DD2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		917EEDF72885F9F500D97DD2 /* ProfiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfiveViewModel.swift; sourceTree = "<group>"; };
+		91CEAFD628A0525200836183 /* BackgroungTableUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroungTableUIView.swift; sourceTree = "<group>"; };
+		91DA7D14288DC8980048E18D /* Doctors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctors.swift; sourceTree = "<group>"; };
+		91E4D282288896030001F06C /* SpecialistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialistCell.swift; sourceTree = "<group>"; };
 		AAF7118D49400F35C69502D6 /* Pods-HealthMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthMonitoring.debug.xcconfig"; path = "Target Support Files/Pods-HealthMonitoring/Pods-HealthMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
 		B8B11B8B85A59E2D4F994212 /* Pods_HealthMonitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthMonitoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5135743FE8FFE39ABC5B190 /* Pods-HealthMonitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthMonitoring.release.xcconfig"; path = "Target Support Files/Pods-HealthMonitoring/Pods-HealthMonitoring.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +89,7 @@
 		917EEDE6288569BB00D97DD2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				91CEAFD528A0521B00836183 /* UIComponents */,
 				917EEDEE2885F6FD00D97DD2 /* MainScreen */,
 				917EEDF32885F9B700D97DD2 /* ProfileScreen */,
 			);
@@ -118,6 +125,8 @@
 		917EEDEE2885F6FD00D97DD2 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				91DA7D13288DC87D0048E18D /* Models */,
+				91DA7D12288DB2CC0048E18D /* Cells */,
 				9145BFAC2883EFD7007AE45E /* MainViewController.swift */,
 				917EEDEF2885F72B00D97DD2 /* MainRouter.swift */,
 				917EEDF12885F73500D97DD2 /* MainViewModel.swift */,
@@ -132,6 +141,30 @@
 				917EEDF72885F9F500D97DD2 /* ProfiveViewModel.swift */,
 			);
 			path = ProfileScreen;
+			sourceTree = "<group>";
+		};
+		91CEAFD528A0521B00836183 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				91CEAFD628A0525200836183 /* BackgroungTableUIView.swift */,
+			);
+			name = UIComponents;
+			sourceTree = "<group>";
+		};
+		91DA7D12288DB2CC0048E18D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				91E4D282288896030001F06C /* SpecialistCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		91DA7D13288DC87D0048E18D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91DA7D14288DC8980048E18D /* Doctors.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9BC3B82A28B29EA5B3EC211F /* Pods */ = {
@@ -265,12 +298,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91DA7D15288DC8980048E18D /* Doctors.swift in Sources */,
 				917EEDF82885F9F500D97DD2 /* ProfiveViewModel.swift in Sources */,
+				91E4D283288896030001F06C /* SpecialistCell.swift in Sources */,
 				917EEDF02885F72B00D97DD2 /* MainRouter.swift in Sources */,
 				917EEDED28856D7700D97DD2 /* UIFont+customFonts.swift in Sources */,
 				9145BFAD2883EFD7007AE45E /* MainViewController.swift in Sources */,
 				9145BFA92883EFD7007AE45E /* AppDelegate.swift in Sources */,
 				917EEDF62885F9E600D97DD2 /* ProfileViewController.swift in Sources */,
+				91CEAFD728A0525200836183 /* BackgroungTableUIView.swift in Sources */,
 				917EEDEB28856B8C00D97DD2 /* UIColor+customColors.swift in Sources */,
 				917EEDF22885F73500D97DD2 /* MainViewModel.swift in Sources */,
 			);
